@@ -96,4 +96,13 @@ Write a function which removes from string all non-digit characters
 and parse the remaining to number. E.g: "hell5o wor6ld" -> 56
 */
 
-getNumberFromString = s => +s.replace(/\D/g,'')
+getNumberFromString = s => +s.replace(/\D/g,'');
+
+    /*
+Завершите функцию, которая принимает строку в качестве аргумента, 
+представляющую текущее состояние источника света, и возвращает строку, 
+представляющую состояние, в которое свет должен измениться.
+    */
+
+const updateLight = current =>
+    current == "red" ? "green" : current == "green" ? "yellow" : "red"

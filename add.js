@@ -106,3 +106,6 @@ getNumberFromString = s => +s.replace(/\D/g,'');
 
 const updateLight = current =>
     current == "red" ? "green" : current == "green" ? "yellow" : "red"
+
+// Regex validate PIN code
+const validatePIN = pin => /^(\d{4}|\d{6})$/.test(pin)

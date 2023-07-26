@@ -109,3 +109,9 @@ const updateLight = current =>
 
 // Regex validate PIN code
 const validatePIN = pin => /^(\d{4}|\d{6})$/.test(pin)
+
+// return
+function timesFive(num) {
+        return num * 5
+    }
+    timesFive(5)
